@@ -1,3 +1,5 @@
+https://coveralls.io/repos/github/campuuuu/testing-assignment/badge.svg?branch=main(Coverage Status)!:https://coveralls.io/github/campuuuu/testing-assignment?branch=main
+
 # Student template
 
 ## Purpose of this repository
