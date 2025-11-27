@@ -15,7 +15,7 @@ describe('divide', () => {
     })
 
   test('expect divide 0 to return 0', () => {
-    expect(divide(7, 0)).toBe(NaN);
+    expect(divide(7, 0)).toBeNaN();
     })
 
   test('expect undefined or null value to return 1', () => {
