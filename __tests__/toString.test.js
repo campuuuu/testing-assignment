@@ -20,15 +20,46 @@ test('number to a string value', () => {
   expect(toString("abc")).toBe("abc");
 });
 
-
-// Planned test cases:
 //[1,2,3] -> '1,2,3'
-//[] -> ''
-//['a','b','c'] -> 'a,b,c'
-//[1,2,[3]] -> '1,2,3'
-//[[1,2,[3],[4]],5] -> '1,2,3,4,5' 
-//symbol -> 'symbol'
+test('list to a string value', () => {
+  expect(toString([1,2,3])).toBe('1,2,3');
+});
 
-//'     ' -> ''
+//[] -> ''
+test('empty list returns empty string', () => {
+  expect(toString([])).toBe('');
+});
+
+//['a','b','c'] -> 'a,b,c'
+test('list with chars returns a string', () => {
+  expect(toString(['a','b','c'])).toBe("a,b,c");
+});
+
+//[1,2,[3]] -> '1,2,3'
+test('nested list returns a string', () => {
+  expect(toString([1,2,[3]])).toBe("1,2,3");
+  //[[1,2,[3],[4]],5] -> '1,2,3,4,5'
+  expect(toString([[1,2,[3],[4]],5])).toBe("1,2,3,4,5");
+});
+
+
+//'     ' -> '     '
+// Keep the spaces
+test('expect string with spaces to return the same string', () => {
+  expect(toString(['     '])).toBe('     ');
+});
+
 //null -> '' 
 //undefined -> ''
+test('expect null and undefined to return an empty string', () => {
+  expect(toString([null])).toBe("");
+  expect(toString([undefined])).toBe("");
+});
+
+
+//symbol -> 'symbol'
+//Check this
+test('expect null and undefined to return an empty string', () => {
+  const sym = Symbol("xyz");
+  expect(toString(sym)).toBe("Symbol(xyz)");
+});
