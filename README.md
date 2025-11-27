@@ -15,19 +15,19 @@ Unit tests use Jest framework
 
 ## Running the unit tests
 Run the tests locally
-´´´
+```
 npm test
-´´´
+```
 
 Run a specific test file in __test__ folder
-´´´
+```
 npm test -- the_test_file.test.js
-´´´
+```
 
 Run the tests locally with a coverage report
-´´´
+```
 npm run test:coverage
-´´´
+```
 
 ## Coveralls
 Link to Coveralls which offers coverage raports of the unit tests pushed in GitHub:
