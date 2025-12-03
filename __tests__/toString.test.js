@@ -52,8 +52,8 @@ test('expect string with spaces to return the same string', () => {
 //null -> '' 
 //undefined -> ''
 test('expect null and undefined to return an empty string', () => {
-  expect(toString([null])).toBe("");
-  expect(toString([undefined])).toBe("");
+  expect(toString(null)).toBe("");
+  expect(toString(undefined)).toBe("");
 });
 
 

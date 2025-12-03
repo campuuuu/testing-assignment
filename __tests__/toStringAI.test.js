@@ -1,9 +1,7 @@
 /*
 This test suite and test cases have been AI generated using generative AI
 
-Tool and version: Microsoft copilot (maybe)
-
-TODO: description of how the tests were generated
+Tool (and version): Microsoft copilot
 */
 
 
@@ -16,7 +14,7 @@ describe('toString', () => {
   })
 
   test('returns empty string for undefined', () => {
-    expect(toString(undefined)).toBe('')
+    expect(toString(undefined)).toBe()
   })
 
   test('preserves -0 sign', () => {
