@@ -58,7 +58,6 @@ test('expect null and undefined to return an empty string', () => {
 
 
 //symbol -> 'symbol'
-//Check this
 test('expect null and undefined to return an empty string', () => {
   const sym = Symbol("xyz");
   expect(toString(sym)).toBe("Symbol(xyz)");
