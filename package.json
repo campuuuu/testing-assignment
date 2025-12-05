@@ -15,11 +15,6 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "transform": {},
-    "collectCoverageFrom": [
-      "src/**/*.{js,ts,jsx,tsx}",
-      "!src/internal/**"
-    ],
-    "coverageDirectory": "coverage"
+    "transform": {}
   }
 }
